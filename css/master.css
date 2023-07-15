@@ -1,0 +1,172 @@
+/* Start variables  */
+:root {
+    /* Primary colors  */
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    /* neutral color  */
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+/* End variables  */
+
+
+/* Start global  */
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    min-height: 100vh;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Dark-cyan);
+    overflow: hidden;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* End global  */
+
+/* Start code */
+.body_up {
+    position: absolute;
+    left: -25%;
+    top: -95%;
+}
+
+.body_down {
+    position: absolute;
+    right: -20%;
+    bottom: -110%;
+}
+
+
+main {
+    width: 410px;
+    background-color: white;
+    border-radius: 1.5rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.upper-content {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+img.upper_main {
+    width: 100%;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    margin-bottom: 0;
+    display: block;
+
+
+}
+
+img.profile {
+    border-radius: 50%;
+
+    margin-top: -48px;
+    border: 5px solid white;
+
+}
+
+.mid-content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mid-content h2 {
+    font-size: 20px;
+}
+
+
+span {
+    color: var(--Dark-grayish-blue);
+}
+
+/* 26 */
+.mid-content h2>span {
+    font-weight: normal;
+    margin-left: 10px;
+    font-size: 18px;
+
+}
+
+span.london {
+    margin-top: 10px;
+    display: block;
+    font-size: 16px;
+}
+
+hr {
+    border-color: var(--Dark-gray);
+    border-top: 1px solid var(--Dark-gray);
+    border-bottom: none;
+    opacity: 20%;
+}
+
+.lower-content {
+    display: flex;
+    justify-content: space-evenly;
+    height: 33.333%;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.lower-content .box {
+    margin-right: 10px;
+    text-align: center;
+}
+
+.lower-content .box h2 {
+    font-size: 20px;
+}
+
+.lower-content .box span {
+    font-size: 14px;
+}
+
+.attribution {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.5;
+    justify-content: center;
+}
+
+@media (max-width: 420px) {
+    .body_up {
+        display: none;
+    }
+
+    .body_down {
+        display: none;
+    }
+
+    body {
+        height: 100vh;
+        justify-content: center;
+    }
+
+    main {
+        width: 300px;
+        height: 400px;
+    }
+
+    .lower-content {
+        margin-top: -5px;
+    }
+}
+
+/* End code */
